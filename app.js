@@ -3,6 +3,12 @@ const express = require('express');
 // express
 const app = express();
 
+// register view engine
+app.set('view engine', 'ejs')
+
+// Para o caso de os arquivos htmls estejam em outra pasta, por exemplo, se estivem na pasta myviews:
+// app.set('views', 'myviews') 
+
 // listen for requests
 app.listen(3000);
 
